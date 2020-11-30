@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/order.css">
+  <title>Суши на дом</title>
+</head>
+<body>
+  <header>
+    <h1>Суши с доставкой на дом</h1>
+    <button type="button" name="button">Заказать</button>
+
+  </header>
+  <main>
+    <div class="order">
+      <form action="">
+        <ul>
+          <li>
+            <label for="lName"><span>Имя</span>
+              <input type="text" id="lName" name="lNeme"required placeholder="Введите ваше имя">
+            </label>
+          </li>
+          <li>
+            <label for="sity"><span>Город</span>
+              <input type="text" name="sity" id="sity" list="genreSuggestions" required placeholder="Ваш город">
+              <datalist id="genreSuggestions">
+              <option>Краматорск</option>
+              <option>Славянск</option>
+              <option>Дружковка</option>
+              <option>Харьков</option>
+              <option>Бахмут</option>
+              <option>Киев</option>
+          </datalist>
+            </label>
+          </li>
+          <li>
+            <label for="address">
+        <span>Адрес</span>
+        <input type="text" id="address" name="userAddress" required placeholder="Адрес">
+      </label>
+          </li>
+          <li>
+            <label for="phone">
+        <span>Телефон</span>
+        <input type="tel" id="phone" name="userPhone" required placeholder="Телефон">
+      </label>
+          </li>
+          <li>
+            <label for="email">
+        <span>Email</span>
+        <input type="email" id="email" name="email" placeholder="Ваша почта">
+      </label>
+          </li>
+          <li>
+            <label for="quantity">
+        <span>Сколько палочек положить?</span>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" step="1">
+      </label>
+          </li>
+          <li>
+            <label for="stickType1">
+              <span>Какие палочки положить?</span><br>
+            <span>Обычные</span>
+            <input type="checkbox" id="stickType1" name="stickType" checked><br>
+              </label>
+              <label for="stickType2">
+            <span>Учебные</span>
+            <input type="checkbox" id="stickType2" name="stickType">
+          </label>
+          </li>
+          <li>
+            <label for="sushi">
+              <span>Какие суши хотите заказать?</span><br>
+              <select  name="sushi" id="sushi" multiple>
+                <option value="">Тояма</option>
+                <option value="">Томаго</option>
+                <option value="">Т Ниндзя</option>
+                <option value="">Грин ролл</option>
+                <option value="">Чипс Маки</option>
+                <option value="">Палермо</option>
+                <option value="">Рим</option>
+                <option value="">Филадельфия с лососем</option>
+                <option value="">Кунсей</option>
+                <option value="">Калифорния с креветкой</option>
+                <option value="">Мичи</option>
+
+              </select>
+            </label>
+          </li>
+          <li>
+
+            <span>Нужны ли салфетки</span><br>
+            <label for="napkins1">
+            <span>ДА</span>
+            <input type="radio" id="napkins1" name="napkins1" checked></label>
+            <br>
+             <label for="napkins1">
+            <span>НЕТ</span>
+            <input type="radio" id="napkins1" name="napkins1">
+          </label>
+          </li>
+          <li>
+            <label for="commit">
+              <span>Уточнение к заказу?</span><br>
+              <textarea name="commit" rows="8" cols="60" id="commit" placeholder="Уточнение к заку"></textarea>
+            </label>
+          </li>
+          <li>
+            <button type="submit" name="button">Заказать</button>
+          </li>
+        </ul>
+      </form>
+
+    </div>
+
+  </main>
+  <footer>
+    <h3>Суши на дом</h3>
+    <div>Тел:123 456 45</div>
+
+  </footer>
+
+</body>
+</html>
