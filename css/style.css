@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
+*{
+  box-sizing: border-box;
+}
 body{
   width: 100%;
+  font-family: sans-serif;
+  font-size: 18px;
+    background: url(../img/pochemu-sushi.jpg) no-repeat #f3edf4;
+    background-size: cover;
 
 }
 header{
@@ -9,13 +15,14 @@ header{
   height: 60vh;
   background-color: #8c247a;
   position: relative;
+ background-image: linear-gradient(#8c247a, #d65ac5);
 }
 header .header{
   width: 100%;
   color:#fff;
-  background-color: #8c247a;
-  border: 1px solid #000;
-  position: sticky;
+  background-image: linear-gradient(#d65ac5,#8c247a );
+
+  position: fixed;
   top: 0;
   z-index: 5;
   display: flex;
@@ -24,7 +31,7 @@ header .header{
 }
 
 header .header .logo img{
-  width: 60px;
+  width: 50px;
   vertical-align: middle;
   margin-top: 10px;
 }
@@ -41,14 +48,14 @@ header .header .contact{
 
 main{
   width: 100%;
-  height: 90vh;
+  height: auto;
+  padding: 30px 0;
 }
 
 /* меню */
 .conteiner{
   width: 100%;
   padding: 10px;
-  /* background-color:#8ec6df; */
   position: relative;
 }
 
@@ -75,50 +82,102 @@ main{
   transition: 0.6s;
 
 }
+.main-menu li a.active:hover{
+ border-bottom: none;
+ cursor: text;
+}
+
 .toogle-button, #menu-checkbox{
   display: none;
 font-size: 40px;
 }
+/* общие стили */
+section{
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color:  rgba(219, 174, 211, 0.62);
+}
+.borderShadov{
+  border: 2px solid #70375e;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px 0px rgba(1, 1, 1, 0.32);
+}
+.left{
+  width: 50%;
+  float: left;
+}
+.right{
+  width: 50%;
+    float: right;
+}
+button{
+ width: 30%;
+ padding: 10px;
+ background-color: red;
+ border-radius: 15px;
+ font-size: 1.2em;
+ font-weight: bold;
+ margin: auto;
+}
 
+button a{
+ color:#000;
+ text-decoration: none;
+}
 
 /* главная */
 section.home{
-  width: 80%;
+  /* width: 80%; */
   position: relative;
   z-index: 1;
   margin: -180px auto;
-  padding: 20px;
-  border: 2px solid #000;
-  border-radius: 20px;
   background-color: #fff;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
-section.home .home_img{
-  width: 50%;
-}
-section.home img{
+
+.home .home_img img{
   width: 80%;
+  margin-top: 60px;
+
 
 }
-section.home .home_text{
-  width: 50%;
+
+.clearfix::before, .clearfix::after{
+  content: " ";
+  display: table;
+}
+.clearfix::after{
+  clear: both;
 }
 section.home .home_text h1{
   font-family: 'Pacifico', cursive;
   font-size: 3em;
 }
+/* секция видео */
+section.video{
+
+  margin-top: 200px;
+  padding: 20px;
+
+}
+
+
+/* секция видео */
+.ord{
+  text-align: center;
+}
+  /* кнопка */
 
 footer{
   width: 100%;
-  /* height: 50px; */
-  background-color: #8c247a;
+  background-image: linear-gradient(#8c247a, #d65ac5);
 
 }
 footer .footer{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   color: #fff;
   padding: 10px;
 }
@@ -148,6 +207,10 @@ footer .footer .social .icon2{
 footer .footer .social .icon3{
     background-position: 0px 174px;
 }
+footer .copy p{
+  color:#fff;
+  text-align: center;
+}
 
 
 @media screen and (max-width:940px){
@@ -158,22 +221,35 @@ footer .footer .social .icon3{
     width: 100%;
     text-align: center;
   }
+  .left, .right{
+    width: 100%;
+  }
+  .home_img{
+    text-align: center;
+  }
+  .video-video, .video-text, .ord{
+    text-align: center;
+  }
+  .video-text ul{
+    text-align: left;
+  }
 
 }
 
 @media screen and (max-width:600px) {
 
    header .header{
-     background-color: #000;
+     background-color: #8c247a;
      color: #fff;
    }
     .main-menu{
       display: none;
   position: fixed;
-  top:20px;
+  top:30px;
   right: 0;
   padding: 20px;
-  background-color:  #000;
+  background-color:  #8c247a;
+  border-radius: 15px;
 
     }
     .main-menu li{
@@ -194,18 +270,59 @@ footer .footer .social .icon3{
       display: block;
       position: absolute;
       right: 0px;
-      top: 0px;
+      top: -130px;
 
     }
     #menu-checkbox:checked + nav .main-menu{
      display: block;
-
+       animation: menuAnim 2s linear 1;
     }
+    @keyframes menuAnim {
+  0%{
+    right:-160px;
+  }
+  50%{
+    right:-80px;
+  }
+  100%{
+    right:0px;
+  }
+}
+#menu-checkbox + nav .main-menu{
+ display: block;
+   animation: meAnim 2s linear 1  forwards ;
+}
+@keyframes meAnim {
+0%{
+right:0px;
+}
+50%{
+right:-80px;
+}
+100%{
+right:-160px;
+}
+}
+
     #menu-checkbox + nav .toogle-button::after{
       content: attr(data-open);
 
     }
     #menu-checkbox:checked + nav .toogle-button::after{
       content: attr(data-close);
+  }
+  section{
+    width: 100%;
+  }
+  .ord button{
+    width: 60%;
+  }
+}
+@media screen and (max-width:445px){
+  section.video{
+    display: none;
+  }
+  section.ord{
+    margin-top: 200px;
   }
 }

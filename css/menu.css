@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 18px;
+    background: url(../img/pochemu-sushi.jpg) no-repeat #f3edf4;
+    background-size: cover;
+
+}
