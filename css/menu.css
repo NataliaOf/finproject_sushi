@@ -10,3 +10,87 @@ body{
     background-size: cover;
 
 }
+.on_menu{
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card, .hidden {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 20px;
+  /* margin: 0 auto; */
+  position: relative;/*относительное позиционирование родительского элемента,
+  чтобы дочерние .product, .description располагать внутри card*/
+  border: 1px solid #f5dde1;
+  font-style: 0.7em;
+}
+.card .description h2{
+  font-size: 1.2em;
+  color:#8c247a;
+  font-family: 'Pacifico', cursive;
+}
+.card .description p{
+    font-size: 0.8em;
+}
+.product, .description {
+  width: 100%;/*ширина 100% родителя*/
+  height: 100%;/*высота 100% родителя*/
+    border-radius: 10px;
+  position: absolute;/*абсолютное позиционирование элементов внутри родителя с классом card*/
+  left: 0;/*координата позиционирвоания слева 0px*/
+  top: 0;/*координата позиционирвоания сверху 0px*/
+  text-align:center;
+  backface-visibility: hidden;/*скрывает обратную сторону во время переворота*/
+  background-color: #fff;
+  transition: 1s;
+ }
+
+.button1{
+  /* display:inline-block; */
+  /* padding: 10px 30px; */
+  margin-top:8px;
+  width: auto;
+  font-size: 0.7em;
+  /* text-decoration:none; */
+  text-transform:uppercase;
+  /* color:#fff; */
+  /* background-color: #f5dde1; */
+}
+.description {
+  box-sizing:border-box;
+  padding:10px;
+  transform: rotateY(180deg); /*поврот блока с описание на 180 град, прячем в начальном состоянии, без наведения курсора мыши*/
+}
+.card:hover .product {
+  transform: rotateY(180deg); /*разворачиваем блок с изображением на 180 градусов*/
+}
+.card:hover .description {
+  transform: rotateY(360deg); /*возвразщаем блок с описанием*/
+}
+.product img{
+  width: 100%;
+  height: 100%;
+}
+.hidden .description {
+   display: none;
+}
+.hidden:hover .product, {
+     transform:none;
+}
+.hidden:hover .description{
+    transform: none;
+}
+.hidden{
+  filter: contrast(50%);
+}
+.container{
+  width: 70%;
+}
+@media screen and (max-width:735px) {
+  .container{
+    width: 100%;
+}

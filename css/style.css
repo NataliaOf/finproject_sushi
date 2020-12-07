@@ -150,7 +150,7 @@ section.home{
 .clearfix::after{
   clear: both;
 }
-section.home .home_text h1{
+ h1{
   font-family: 'Pacifico', cursive;
   font-size: 3em;
 }
@@ -198,14 +198,14 @@ footer .footer .social .icon{
 }
 
 footer .footer .social .icon1{
-  background-position: 0px 0px;
+  background-position: -2px -2px;
 }
 footer .footer .social .icon2{
-  background-position: 232px 0px;
+  background-position: 230px -2px;
 }
 
 footer .footer .social .icon3{
-    background-position: 0px 174px;
+    background-position: 0px 172px;
 }
 footer .copy p{
   color:#fff;
