@@ -17,17 +17,20 @@ header{
 main{
   padding-top: 30px;
 }
-
-.order h1{
-  font-family: 'Pacifico', cursive;
-  font-size: 3em;
+p{
+  color:red;
 }
 
+ /* h1{
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+} */
+
 .order{
-width: 70%;
-margin: 10px auto;
-background-color: rgba(219, 174, 211, 0.62);
-padding: 20px;
+/* width: 90%;
+margin: 10px auto; */
+/* background-color: rgba(219, 174, 211, 0.62); */
+/* padding: 20px; */
 text-align: center;
 }
 .order ul li{

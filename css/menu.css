@@ -10,6 +10,9 @@ body{
     background-size: cover;
 
 }
+.home{
+  text-align: center;
+}
 .on_menu{
   margin-top: 200px;
   display: flex;

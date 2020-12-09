@@ -138,9 +138,42 @@ section.home{
 
 .home .home_img img{
   width: 80%;
-  margin-top: 60px;
+  margin-top: 150px;
 
 
+
+}
+ ul li{
+  list-style: none;
+}
+.video-text ul>li::before{
+
+  content: " ";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  background-image: url(../img/check.png);
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  vertical-align: middle;
+  margin-left: -40px;
+
+}
+
+.home_text ul li i{
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 40px;
+}
+
+.home_text ul li a{
+  color: #000;
+  text-decoration: none;
+}
+
+.home_text ul li a:hover{
+  color: #8c247a;
 }
 
 .clearfix::before, .clearfix::after{
@@ -159,6 +192,14 @@ section.video{
 
   margin-top: 200px;
   padding: 20px;
+
+}
+.videobox{
+  width: 90%;
+  margin: 0 auto;
+}
+.videobox iframe{
+  width: 100%;
 
 }
 
@@ -244,8 +285,8 @@ footer .copy p{
    }
     .main-menu{
       display: none;
-  position: fixed;
-  top:30px;
+  position: absolute;
+  top:0px;
   right: 0;
   padding: 20px;
   background-color:  #8c247a;
@@ -319,9 +360,9 @@ right:-160px;
   }
 }
 @media screen and (max-width:445px){
-  section.video{
+  /* section.video{
     display: none;
-  }
+  } */
   section.ord{
     margin-top: 200px;
   }
