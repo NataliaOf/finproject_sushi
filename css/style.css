@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body{
   width: 100%;
@@ -13,14 +15,14 @@ body{
 header{
   width: 100%;
   height: 60vh;
-  background-color: #8c247a;
+  /* background-color:#1E796A; */
   position: relative;
- background-image: linear-gradient(#8c247a, #d65ac5);
+ background-image: linear-gradient(#006957,#00A287);
 }
 header .header{
   width: 100%;
   color:#fff;
-  background-image: linear-gradient(#d65ac5,#8c247a );
+  background-image: linear-gradient(#00A287,#006957);
 
   position: fixed;
   top: 0;
@@ -93,14 +95,14 @@ font-size: 40px;
 }
 /* общие стили */
 section{
-    width: 90%;
+    width: 80%;
     padding: 20px;
     margin: 0 auto;
     margin-bottom: 20px;
-    background-color:  rgba(219, 174, 211, 0.62);
+    background-color: rgba(53, 215, 131, 0.57);
 }
 .borderShadov{
-  border: 2px solid #70375e;
+  border: 2px solid #006957;
   border-radius: 10px;
   box-shadow: 4px 4px 8px 0px rgba(1, 1, 1, 0.32);
 }
@@ -126,18 +128,36 @@ button a{
  color:#000;
  text-decoration: none;
 }
+h1{
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+}
+a{
+  text-decoration: none;
+  color:#006957;
+
+}
+a:hover{
+  text-decoration: none;
+  color: #00A287;
+    transition: 0.5s;
+}
 
 /* главная */
 section.home{
   /* width: 80%; */
   position: relative;
   z-index: 1;
-  margin: -180px auto;
+  margin: -250px auto;
   background-color: #fff;
 }
 
 .home .home_img img{
-  width: 80%;
+  width: 90%;
   margin-top: 150px;
 
 
@@ -161,20 +181,7 @@ section.home{
 
 }
 
-.home_text ul li i{
-  vertical-align: middle;
-  margin-right: 10px;
-  font-size: 40px;
-}
 
-.home_text ul li a{
-  color: #000;
-  text-decoration: none;
-}
-
-.home_text ul li a:hover{
-  color: #8c247a;
-}
 
 .clearfix::before, .clearfix::after{
   content: " ";
@@ -183,14 +190,11 @@ section.home{
 .clearfix::after{
   clear: both;
 }
- h1{
-  font-family: 'Pacifico', cursive;
-  font-size: 3em;
-}
+
 /* секция видео */
 section.video{
 
-  margin-top: 200px;
+  margin-top: 270px;
   padding: 20px;
 
 }
@@ -202,17 +206,21 @@ section.video{
   width: 100%;
 
 }
+.video-text{
+  padding-left: 60px;
+}
 
 
 /* секция видео */
 .ord{
   text-align: center;
+  /* margin-top: 20px; */
 }
   /* кнопка */
 
 footer{
   width: 100%;
-  background-image: linear-gradient(#8c247a, #d65ac5);
+  background-image: linear-gradient(#00A287,#006957);
 
 }
 footer .footer{
@@ -233,20 +241,20 @@ footer .footer .social .icon{
   height: 50px;
   display: inline-block;
   margin-right: 5px;
-  background-image: url(../img/social.png);
+  background-image: url(../img/icon-social.jpg);
   border: 2px solid #fff;
   border-radius: 5px;
 }
 
 footer .footer .social .icon1{
-  background-position: -2px -2px;
+  background-position: -5px -3px ;
 }
 footer .footer .social .icon2{
-  background-position: 230px -2px;
+  background-position: 46px -3px;
 }
 
 footer .footer .social .icon3{
-    background-position: 0px 172px;
+    background-position: -57px -3px;
 }
 footer .copy p{
   color:#fff;
@@ -262,11 +270,15 @@ footer .copy p{
     width: 100%;
     text-align: center;
   }
+  section.home{
+    margin-top: -200px;
+  }
   .left, .right{
     width: 100%;
   }
   .home_img{
     text-align: center;
+    margin-top: -100px;
   }
   .video-video, .video-text, .ord{
     text-align: center;
@@ -274,13 +286,16 @@ footer .copy p{
   .video-text ul{
     text-align: left;
   }
+  section{
+    width: 90%;
+  }
 
 }
 
 @media screen and (max-width:600px) {
 
    header .header{
-     background-color: #8c247a;
+     background-color:  #006957;
      color: #fff;
    }
     .main-menu{
@@ -289,7 +304,7 @@ footer .copy p{
   top:0px;
   right: 0;
   padding: 20px;
-  background-color:  #8c247a;
+  background-color:   #006957;
   border-radius: 15px;
 
     }
@@ -358,12 +373,19 @@ right:-160px;
   .ord button{
     width: 60%;
   }
+  .home .home_img img{
+    margin-top: 70px;
+}
+h1{
+  margin-top: -10px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width:445px){
   /* section.video{
     display: none;
   } */
-  section.ord{
-    margin-top: 200px;
-  }
+  /* .home .home_img img{
+    margin-top: 20px;
+  } */
+
 }
