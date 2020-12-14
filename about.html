@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/about.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <title>О нас</title>
 </head>
 <body>
@@ -25,11 +28,11 @@
             <label for="menu-checkbox" class="toogle-button" data-open="&#9776;" data-close="&#10006;"></label>
             <ul class="main-menu">
               <li>
-                <a href="#">Главная</a>
+                <a href="index.html">Главная</a>
               </li>
-              <li><a href="#">Меню</a></li>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Скидки</a></li>
+              <li><a href="menu.html">Меню</a></li>
+              <li><a href="#" class="active">О нас</a></li>
+              <li><a href="sale.html">Скидки</a></li>
               <li><a href="order.html">Заказать</a></li>
             </ul>
           </nav>
@@ -41,6 +44,82 @@
 
   </header>
   <main>
+    <section class="home borderShadov foto">
+      <h1>Наша команда</h1>
+      <div class="staff">
+        <h3>Шеф повар</h3>
+        <img src="img/foto1.jpg" alt="Шеф повар" class="borderShadov">
+        <div class="staff_info">
+       <h4>Иванов Сергей Владимирович</h4>
+       <p>Шеф повар. Учился и работал в Японии.</p>
+      </div>
+      </div>
+      <div class="staff">
+        <h3>Повар</h3>
+        <img src="img/foto2.jpg" alt="Шеф повар" class="borderShadov">
+        <div class="staff_info">
+       <h4>Петров Вадим Сергеевич</h4>
+       <p>Работает более 5 лет</p>
+      </div>
+      </div>
+      <div class="staff">
+        <h3>Повар</h3>
+        <img src="img/foto3.jpg" alt="Шеф повар" class="borderShadov">
+        <div class="staff_info">
+       <h4>Петров Владислав Дмитриевич</h4>
+       <p>Молодой, но очень хороший повар</p>
+      </div>
+      </div>
+      <div class="staff">
+        <h3>Помощник повара</h3>
+        <img src="img/foto4.jpg" alt="Шеф повар" class="borderShadov">
+        <div class="staff_info">
+       <h4>Алиев Рустам Русланович</h4>
+       <p>Учится готовить суши у шеф повара</p>
+      </div>
+      </div>
+      <div class="staff">
+        <h3>Администратор</h3>
+        <img src="img/foto5.jpg" alt="Шеф повар" class="borderShadov">
+        <div class="staff_info">
+       <h4>Воронова Екатерина Ивановна</h4>
+       <p>Ассортимент суши знает на отлично</p>
+      </div>
+      </div>
+      <div class="staff">
+        <h3>Курьер</h3>
+        <img src="img/foto6.jpg" alt="Шеф повар" class="borderShadov">
+        <div class="staff_info">
+       <h4>Иванов Артем Владимирович</h4>
+       <p>Очень быстрый парень</p>
+      </div>
+      </div>
+    </section>
+    <section class="reviews borderShadov">
+      <h2>Отзывы</h2>
+      <div class="container-box">
+        <div class="box borderShadov">
+          <img src="img/olesja.jpg" alt="Олеся"class="borderShadov">
+          <p><span>Олеся</span></p>
+          <p>Сегодня опять заказали. Не устану писать положительные отзывы! Ооочень вкусно! Роллы свежие, большие, неповторимые! Отдельное спасибо за бонус!
+</p>
+        </div>
+        <div class="box borderShadov">
+          <img src="img/katja.jpg" alt="Екатерина" class="borderShadov">
+          <p><span>Екатерина</span></p>
+          <p>Все было вкусно. Заказ доставлен вовремя. Администратор помогла сделать выбор.
+          Будем еще заказывать.</p>
+        </div>
+        <div class="box borderShadov">
+          <img src="img/dima.jpg" alt="Дмитрий" class="borderShadov">
+          <p><span>Дмитрий</span></p>
+          <p>Мне очень понравились! Большие, свежие, вкусные. Филадельфия
+             действительно С ЛОСОСЕМ, а не с малюсенькими тонкими огрызками.
+             Буду и дальше заказывать у вас, так держать!</p>
+        </div>
+      </div>
+
+    </section>
 
   </main>
   <footer>
@@ -63,6 +142,8 @@
     </div>
 
   </footer>
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>
 </html>
