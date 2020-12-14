@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -42,6 +43,99 @@
 
   </header>
   <main>
+    <section class="home borderShadov clearfix">
+      <h1>Скидки и условия заказа.</h1>
+      <div class="tale left">
+        <table border="2px" class="borderShadov">
+          <tr>
+            <th>Скидка</th>
+            <th>Условие</th>
+          </tr>
+          <tr>
+            <td>2%</td>
+            <td>За отзыв на сайте</td>
+          </tr>
+          <tr>
+            <td>5%</td>
+            <td>Каждый пятый заказ</td>
+          </tr>
+          <tr>
+            <td>10%</td>
+            <td>Подарок на день рождения</td>
+          </tr>
+        </table>
+      </div>
+      <div class="table_text right">
+        <div class="container">
+          <div id="accordion" class="borderShadov">
+  <div class="card ">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-outline-success collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Как сделать зказ?
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        Заказать суши можно по телефону 8(095)888-88-88.<br>
+        Заказ будет доставлен в течение 1 часа.<br>
+        Или можно оформить предварительный заказ, заполнив <a href="order.html">форму на сайте</a>.
+        Доставим суши в то время, которое вы укажите.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-outline-success collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Доставка
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+      Доставка производится на нашем транспорте. По указанному вами адресу.<br>
+      Вы можете забрать заказ сами по адресу: ул. Надежды д 124.
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-outline-success collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Оплата
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+       Оплатить можно при получении наличными.<br>
+       Также можно оплатить карточкой через терминал (курьер обязан его предоставить)<br>
+       Онлайн оплата на наш счет (после подтверждения заказа администратором).
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>
+    </section>
+    <section class="grid_gal borderShadov">
+      <div class="gallery">
+
+    <img src="img/kitchen.jpg" class="gallery__img item_1" alt="Image 1">
+
+    <img src="img/set.jpg" class="gallery__img item_2" alt="Image 2">
+
+    <img src="img/sale10.jpg" class="gallery__img item_3" alt="Image 3">
+
+    <img src="img/s2.jpg" class="gallery__img item_4" alt="Image 4">
+
+    <img src="img/s5.jpg" class="gallery__img item_5" alt="Image 5">
+
+    <img src="img/product.jpg" class="gallery__img item_6" alt="Image 6">
+      </div>
+    </section>
 
   </main>
   <footer>
@@ -64,6 +158,8 @@
     </div>
 
   </footer>
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>
 </html>
