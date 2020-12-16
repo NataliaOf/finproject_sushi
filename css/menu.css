@@ -16,7 +16,7 @@ body{
   text-align: center;
 }
 .on_menu{
-  margin-top: 270px;
+  margin-top: 370px;
   display: flex;
   justify-content: space-around;
   align-content: space-around;
@@ -40,6 +40,7 @@ body{
 }
 .card .description p{
     font-size: 0.8em;
+    margin-bottom: 0;
 }
 .product, .description {
   width: 100%;/*ширина 100% родителя*/
@@ -58,7 +59,7 @@ body{
   /* display:inline-block; */
   /* padding: 10px 30px; */
   margin-top:8px;
-  width: auto;
+  /* width: auto; */
   font-size: 0.7em;
   /* text-decoration:none; */
   text-transform:uppercase;

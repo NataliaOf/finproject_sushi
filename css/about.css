@@ -19,7 +19,7 @@ body{
   flex-wrap: wrap;
 }
 .staff{
-  width: 250px;
+  width: 280px;
   position: relative;
   margin: 2%;
 }
@@ -54,13 +54,13 @@ body{
   opacity: 1;
 }
 .reviews{
-  margin-top: 270px;
+  margin-top: 370px;
   /* height: 30vh; */
     background-color: rgba(53, 215, 131, 0.57);
 }
 
 .container-box{
-  display: inline-flex;
+  display: flex;
   justify-content:space-around;
   flex-wrap: wrap;
 
