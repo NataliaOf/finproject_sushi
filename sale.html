@@ -45,29 +45,55 @@
   <main>
     <section class="home borderShadov clearfix">
       <h1>Скидки и условия заказа.</h1>
-      <div class="tale left">
-        <table border="2px" class="borderShadov">
-          <tr>
-            <th>Скидка</th>
-            <th>Условие</th>
-          </tr>
-          <tr>
-            <td>2%</td>
-            <td>За отзыв на сайте</td>
-          </tr>
-          <tr>
-            <td>5%</td>
-            <td>Каждый пятый заказ</td>
-          </tr>
-          <tr>
-            <td>10%</td>
-            <td>Подарок на день рождения</td>
-          </tr>
-        </table>
-      </div>
-      <div class="table_text right">
-        <div class="container">
+              <div class="container">
           <div id="accordion" class="borderShadov">
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-outline-success collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Время работы
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                С 8-00 до 20-00.
+                Без перерыва и без выходных.
+              </div>
+            </div>
+            <div class="card ">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-outline-success collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Скидки
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <table border="2px" class="borderShadov">
+                    <tr>
+                      <th>Скидка</th>
+                      <th>Условие</th>
+                    </tr>
+                    <tr>
+                      <td>2%</td>
+                      <td>За отзыв на сайте</td>
+                    </tr>
+                    <tr>
+                      <td>5%</td>
+                      <td>Каждый пятый заказ</td>
+                    </tr>
+                    <tr>
+                      <td>10%</td>
+                      <td>Подарок на день рождения</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
   <div class="card ">
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
@@ -77,7 +103,7 @@
       </h5>
     </div>
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+    <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
         Заказать суши можно по телефону 8(095)888-88-88.<br>
         Заказ будет доставлен в течение 1 часа.<br>
@@ -119,21 +145,161 @@
 </div>
         </div>
       </div>
+      <button type="button" name="button" class="borderShadov"><a href="order.html">Заказать</a></button>
+        <button type="button" name="button" class="borderShadov"><a href="tel:+80958888888">Позвонить</a></button>
     </section>
     <section class="grid_gal borderShadov">
       <div class="gallery">
+       <div class="image item_1" data-toggle="modal" data-target="#exampleModal">
+         <img src="img/presents.jpg" class="gallery__img  borderShadov" alt="Image 1">
+       </div>
+       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Новогодняя акция</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <img src="img/presents.jpg" class="w borderShadov" alt="Image 1"><br>
+        Купи 2 сета и получи третий в подарок!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+       <div class="image item_2" data-toggle="modal" data-target="#exampleModa3">
+         <img src="img/set.jpg" class="gallery__img borderShadov" alt="Image 2">
+       </div>
+       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Новогодняя акция</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <img src="img/presents.jpg" class="w borderShadov" alt="Image 1"><br>
+        Купи 2 сета и получи третий в подарок!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <img src="img/kitchen.jpg" class="gallery__img item_1" alt="Image 1">
+       <div class="image item_3" data-toggle="modal" data-target="#exampleModa3">
+         <img src="img/sale10.jpg" class="gallery__img borderShadov" alt="Image 3">
+       </div>
+       <div class="modal fade" id="exampleModa3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Подарок на день рождения</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <img src="img/sale10.jpg" class=" borderShadov" alt="Image 3"><br>
+         Получи подарок на День рождения: 10% скидка!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+       <div class="image item_4" data-toggle="modal" data-target="#exampleModa4">
+         <img src="img/sale2.jpg" class="gallery__img  borderShadov" alt="Image 4">
+       </div>
+       <div class="modal fade" id="exampleModa4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Спасибо за ваш отзыв!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/sale2.jpg" class=" borderShadov" alt="Image 4"><br>
+         Получи 2% скидку за отзый!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+       <div class="image item_5" data-toggle="modal" data-target="#exampleModa5">
+         <img src="img/s5.jpg" class="gallery__img  borderShadov" alt="Image 5">
+       </div>
+       <div class="modal fade" id="exampleModa5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Постоянным клиентам!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/s5.jpg" class=" borderShadov" alt="Image 5"><br>
+         Каждый пятый заказ - 5% скидка!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+       <div class="image item_6" data-toggle="modal" data-target="#exampleModa6">
+         <img src="img/product.jpg" class="gallery__img  borderShadov" alt="Image 6">
+       </div>
+       <div class="modal fade" id="exampleModa6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Мы лучшие!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/product.jpg" class=" borderShadov" alt="Image 5"><br>
+         Самые свежие продукты, самый опытный персонал!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <img src="img/set.jpg" class="gallery__img item_2" alt="Image 2">
 
-    <img src="img/sale10.jpg" class="gallery__img item_3" alt="Image 3">
+    <!-- <img src="img/set.jpg" class="gallery__img item_2 borderShadov" alt="Image 2">
 
-    <img src="img/s2.jpg" class="gallery__img item_4" alt="Image 4">
+    <img src="img/sale10.jpg" class="gallery__img item_3 borderShadov" alt="Image 3">
 
-    <img src="img/s5.jpg" class="gallery__img item_5" alt="Image 5">
+    <img src="img/sale2.jpg" class="gallery__img item_4 borderShadov" alt="Image 4">
 
-    <img src="img/product.jpg" class="gallery__img item_6" alt="Image 6">
+    <img src="img/s5.jpg" class="gallery__img item_5 borderShadov" alt="Image 5">
+
+    <img src="img/product.jpg" class="gallery__img item_6 borderShadov" alt="Image 6"> -->
       </div>
     </section>
 
