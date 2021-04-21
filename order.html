@@ -7,22 +7,27 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/order.css">
   <title>Заказать суши</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <header>
     <div class="header">
       <div class="logo">
+      <a href="#">
         <img src="img/logo.svg" alt="">
         <span>Суши бар</span>
+      </a>
       </div>
       <div class="contact">Заказ по телефону:<br> 8(095)666-66-66</div>
       <div class="menu">
         <div class="conteiner">
             <div class="center">
-          <input type="checkbox"id="menu-checkbox">
+              <span id="open">&#9776;</span>
+              <span id="close">&#10006;</span>
+          <!-- <input type="checkbox"id="menu-checkbox"> -->
           <nav role="navigation">
-            <label for="menu-checkbox" class="toogle-button" data-open="&#9776;" data-close="&#10006;"></label>
+            <!-- <label for="menu-checkbox" class="toogle-button" data-open="&#9776;" data-close="&#10006;"></label> -->
             <ul class="main-menu">
               <li>
                 <a href="index.html">Главная</a>
@@ -137,9 +142,9 @@
             </label>
           </li>
           <li>
-            <button type="submit" name="button" class="borderShadov"><a href="mailto:nata@gmail.com">Заказать</a></button>
+            <button type="submit" name="button" class="borderShadov">Заказать</button>
             <button type="button" name="button" class="borderShadov"><a href="tel:+80958888888">Позвонить</a></button>
-             
+
           </li>
         </ul>
       </form>
@@ -167,6 +172,6 @@
     </div>
 
   </footer>
-
+<script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>

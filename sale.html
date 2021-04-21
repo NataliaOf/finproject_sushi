@@ -10,21 +10,26 @@
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/sale.css">
   <title>Скидки</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
   <header>
     <div class="header">
       <div class="logo">
+        <a href="#">
         <img src="img/logo.svg" alt="">
         <span>Суши бар</span>
+        </a>
       </div>
       <div class="contact">Заказ по телефону:<br> 8(095)888-88-88</div>
       <div class="menu">
         <div class="conteiner">
             <div class="center">
-          <input type="checkbox"id="menu-checkbox">
+          <!-- <input type="checkbox"id="menu-checkbox"> -->
+          <span id="open">&#9776;</span>
+          <span id="close">&#10006;</span>
           <nav role="navigation">
-            <label for="menu-checkbox" class="toogle-button" data-open="&#9776;" data-close="&#10006;"></label>
+            <!-- <label for="menu-checkbox" class="toogle-button" data-open="&#9776;" data-close="&#10006;"></label> -->
             <ul class="main-menu">
               <li>
                 <a href="index.html" >Главная</a>
@@ -43,140 +48,80 @@
 
   </header>
   <main>
-    <section class="home borderShadov clearfix">
+    <section  class="home borderShadov clearfix sale">
       <h1>Скидки и условия заказа.</h1>
-              <div class="container">
-          <div id="accordion" class="borderShadov">
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                  <button class="btn btn-outline-success collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Время работы
-                  </button>
-                </h5>
-              </div>
-              <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                С 8-00 до 20-00.
-                Без перерыва и без выходных.
-              </div>
-            </div>
-            <div class="card ">
-              <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                  <button class="btn btn-outline-success collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Скидки
-                  </button>
-                </h5>
-              </div>
+    <div class="box_sale">
+      <button class="collapsible">  Время работы <span class="right">+</span></button>
+      <div class="content">
+        С 8-00 до 20-00.
+        Без перерыва и без выходных.
+      </div>
+      <button class="collapsible">Скидки <span class="right">+</span></button>
+      <div class="content">
+        <table border="2px" class="borderShadov">
+          <tr>
+            <th>Скидка</th>
+            <th>Условие</th>
+          </tr>
+          <tr>
+            <td>2%</td>
+            <td>За отзыв на сайте</td>
+          </tr>
+          <tr>
+            <td>5%</td>
+            <td>Каждый пятый заказ</td>
+          </tr>
+          <tr>
+            <td>10%</td>
+            <td>Подарок на день рождения</td>
+          </tr>
+        </table>
 
-              <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                  <table border="2px" class="borderShadov">
-                    <tr>
-                      <th>Скидка</th>
-                      <th>Условие</th>
-                    </tr>
-                    <tr>
-                      <td>2%</td>
-                      <td>За отзыв на сайте</td>
-                    </tr>
-                    <tr>
-                      <td>5%</td>
-                      <td>Каждый пятый заказ</td>
-                    </tr>
-                    <tr>
-                      <td>10%</td>
-                      <td>Подарок на день рождения</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
-
-  <div class="card ">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-outline-success collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Как сделать зказ?
-        </button>
-      </h5>
-    </div>
-
-    <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="card-body">
+      </div>
+      <button class="collapsible"> Как сделать зказ? <span class="right">+</span></button>
+      <div class="content">
+        <p>
         Заказать суши можно по телефону 8(095)888-88-88.<br>
         Заказ будет доставлен в течение 1 часа.<br>
         Или можно оформить предварительный заказ, заполнив <a href="order.html">форму на сайте</a>.
         Доставим суши в то время, которое вы укажите.
+      </p>
+      </div>
+      <button class="collapsible">Доставка <span class="right">+</span></button>
+      <div class="content">
+        <p>
+          Доставка производится на нашем транспорте. По указанному вами адресу.<br>
+          Вы можете забрать заказ сами по адресу: ул. Надежды д 124.
+        </p>
+      </div>
+      <button class="collapsible">Оплата <span class="right">+</span></button>
+      <div class="content">
+        <p>
+          Оплатить можно при получении наличными.<br>
+          Также можно оплатить карточкой через терминал (курьер обязан его предоставить)<br>
+          Онлайн оплата на наш счет (после подтверждения заказа администратором).
+        </p>
       </div>
     </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-outline-success collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Доставка
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-      Доставка производится на нашем транспорте. По указанному вами адресу.<br>
-      Вы можете забрать заказ сами по адресу: ул. Надежды д 124.
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h5 class="mb-0">
-        <button class="btn btn-outline-success collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Оплата
-        </button>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="card-body">
-       Оплатить можно при получении наличными.<br>
-       Также можно оплатить карточкой через терминал (курьер обязан его предоставить)<br>
-       Онлайн оплата на наш счет (после подтверждения заказа администратором).
-      </div>
-    </div>
-  </div>
-</div>
-        </div>
-      </div>
+
       <button type="button" name="button" class="borderShadov"><a href="order.html">Заказать</a></button>
       <button type="button" name="button" class="borderShadov"><a href="tel:+80958888888">Позвонить</a></button>
       <!-- Button trigger modal -->
-<button type="button" name="button" class="borderShadov" data-toggle="modal" data-target="#exampleModal">
+<button id="stock" type="button" name="button" >
   Акция
 </button>
 
-<!-- Modal -->
+<div class="modal_stock">
+    <h5 class="modal-title" id="exampleModalLabel">Новогодняя акция<span class="btn_close">&#10006;</span></h5>
+    <img src="img/presents.jpg" class="w borderShadov" alt="Image 1"><br>
+     <p>Купи 2 сета и получи третий в подарок!</p>
+</div>
 
-<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Новогодняя акция</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <img src="img/presents.jpg" class="w borderShadov" alt="Image 1"><br>
-         <p>Купи 2 сета и получи третий в подарок!</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div> -->
+
 
     </section>
     <section class="grid_gal borderShadov">
+      <h3>Акции</h3>
       <div class="gallery">
        <div class="image item_1" data-toggle="modal" data-target="#exampleModal">
          <img src="img/presents.jpg" class="gallery__img  borderShadov" alt="Image 1">
@@ -230,6 +175,7 @@
     </div>
 
   </footer>
+  <script src="js/script.js" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
